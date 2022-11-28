@@ -1,20 +1,19 @@
-import "./Header.css";
+import "./Header.css"
 
-import React from "react";
+import React from "react"
 
-class Header extends React.Component {
+class Header extends React.Component{
 
     constructor(props) {
-        super(props);
-        this.state = {
-
-        }
+        super(props)
     }
 
     render() {
         return(
-            <div id="header-body" className="d-flex justify-content-center align-items-center">
-                <h1 className="">This is a header!</h1>
+            <div className="container-fluid border" id="header-body">
+                <div className="d-flex justify-content-center align-items-center h-100">
+                    <h3>Gallery</h3>
+                </div>
             </div>
         )
     }

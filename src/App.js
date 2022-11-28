@@ -1,25 +1,30 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import ActionButton from './components/buttons/action-button/ActionButton';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
+import React from "react"
+import "./App.css"
+import Header from "./components/header/Header"
+import Section from "./components/section/Section"
+import Footer from "./components/footer/Footer"
+import { BrowserRouter as Router } from "react-router-dom"
+import UploadPhotoForm from "./components/upload-photo-form/UploadPhotoForm"
+import Gallery from "./components/gallery/Gallery"
 
-function App() {
+class App extends React.Component{
 
-  const myFunction = (event) => {
-      console.log("It works!")
+  constructor(props){
+    super(props)
   }
 
-
-  return (
-    <div id="application-body">
-        <Header/>
-        <div className="m-3">
-          <ActionButton name="Action" ActionButton={myFunction}></ActionButton>
+  render() {
+    return(
+      <Router>
+        <div className="w-100 h-100" id="app-body">
+          <Header/>
+          <div className="" id="test-gallery">
+            <Gallery/>
+          </div>
         </div>
-        <Footer/>
-    </div>
-  );
+      </Router>
+    )
+  }
 }
 
-export default App;
+export default App
