@@ -1,10 +1,7 @@
 import React from "react"
 import "./App.css"
 import Header from "./components/header/Header"
-import Section from "./components/section/Section"
-import Footer from "./components/footer/Footer"
 import { BrowserRouter as Router } from "react-router-dom"
-import UploadPhotoForm from "./components/upload-photo-form/UploadPhotoForm"
 import Gallery from "./components/gallery/Gallery"
 
 class App extends React.Component{
